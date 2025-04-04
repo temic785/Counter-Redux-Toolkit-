@@ -1,42 +1,183 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #a9dd92;
+}
+
+.main > div {
+  margin-right: 50px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.error {
+  border: red 1px solid;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.error-message {
+  color: red;
+}
+
+.active-filter {
+  background-color: aquamarine;
+}
+
+.is-done {
+  opacity: 0.5;
+}
+
+.task {
+  font-weight: bold;
+}
+
+.task-done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.filter-button {
+  color: white;
+  font-weight: bold;
+  background-color: #7f4f9f;
+  border: 2px solid #7f4f9f;
+  border-radius: 2px;
+}
+
+
+.invalidValue {
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+
+}
+
+button {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.counter {
+  border: 2px solid #3e583b;
+  border-radius: 20px;
+  padding: 50px;
+  background-color: #d1e3b8;
+  width: 220px;
+  height: 300px;
+  color: #3e583b;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  div {
+    margin-top: 35px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.setting-counter {
+  border: 2px solid #94fbbf;
+  border-radius: 20px;
+  padding: 50px;
+  background-color: #3e583b;
+  width: 220px;
+  height: 300px;
+  color: #d1e3b8;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-top: 80px;
+  }
+
+  div {
+    margin-top: 10px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.counterButton {
+  display: flex;
+  justify-content: space-around;
 }
 
-.card {
-  padding: 2em;
+.invalidLocalValue {
+  background-color: #ff4d4d;
+  text-align: center;
 }
 
-.read-the-docs {
-  color: #888;
+.localValue {
+  text-align: center;
 }
+
+input[type="number"]:focus {
+  border-color: #3dc699;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(78, 239, 9, 0.25);
+
+}
+
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #6cc24a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+
+}
+
+
+button:hover {
+  background-color: #2b9b4f;
+  transform: scale(1.05);
+}
+
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.filter-tablo {
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.tablo {
+  font-weight: bold;
+  font-size: 40px;
+}
+.value-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+

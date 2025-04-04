@@ -1,12 +1,12 @@
 import "./App.css"
-import Main from "./Main.tsx";
+import {Main} from "./Main.tsx";
 
 function App() {
 
     return (
-        <>
+        <div>
             <Main/>
-        </>
+        </div>
     )
 }
 

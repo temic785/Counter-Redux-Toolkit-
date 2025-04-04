@@ -1,9 +1,13 @@
+import {SettingCounter} from "../features/counter/ui/SettingCounter/SettingCounter.tsx";
+import {Counter} from "../features/counter/ui/Counter/Counter.tsx";
+
 export const Main = () => {
+
     return (
-        <div>
-            <div>COUNTER</div>
+        <div className="main">
+            <SettingCounter />
+            <Counter />
         </div>
     );
 };
 
-export default Main;
